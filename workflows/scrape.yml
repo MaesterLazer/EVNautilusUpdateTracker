@@ -1,9 +1,12 @@
 name: Scrape Nautilus Updates
 
 on:
+  push:
+    branches: [ main ]
   schedule:
-    - cron: '*/30 * * * *'  # runs every 30 min in UTC :contentReference[oaicite:9]{index=9}
+    - cron: '*/30 * * * *'
   workflow_dispatch:
+
 
 permissions:
   contents: write
